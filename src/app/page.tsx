@@ -1,14 +1,12 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Wallet, Star, Shield, Zap } from "lucide-react"
+import {  Star, Shield, Zap } from "lucide-react"
 import { client } from "./client"
 import { ConnectButton, lightTheme, MediaRenderer, TransactionButton, useActiveAccount, useReadContract } from "thirdweb/react"
-import { defineChain, getContract, PreparedTransaction } from "thirdweb"
+import { defineChain, getContract } from "thirdweb"
 import { getContractMetadata } from "thirdweb/extensions/common"
 import { claimTo } from "thirdweb/extensions/erc721"
-import { log } from "node:console"
 
 
 export default function NFTClaimLandingPage() {
